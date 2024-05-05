@@ -57,7 +57,7 @@ Program ini dapat dijalankan dengan dua cara, terminal dan website:
 - Dari root directory lakukan command berikut untuk menuju ke directory bin
 ```cd bin```
 - Lalu buka terminal dan jalankan command berikut:
-```./run_main.bat
+```./run_main.bat```
 - Terminal baru akan dibuat dan menjalankan main program
 - Pada terminal anda dapat memasukkan startWord, endWord serta algoritma yang kalian inginkan.
 
