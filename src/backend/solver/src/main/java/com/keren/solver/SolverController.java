@@ -30,8 +30,8 @@ public class SolverController {
 
     @PostMapping("/wlsolver")
     public Result postMethodName(@RequestBody ResponseData data) {
-        String startWord = data.getStartWord();
-        String endWord = data.getEndWord();
+        String startWord = data.getStartWord().toLowerCase();
+        String endWord = data.getEndWord().toLowerCase();
         String algorithm = data.getAlgorithm();
         
         Result newResult = findPath(startWord, endWord, algorithm);

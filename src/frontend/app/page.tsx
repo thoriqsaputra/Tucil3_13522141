@@ -20,6 +20,9 @@ export default function Home() {
   const [showResult, setShowResult] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
   const resultSectionRef = useRef<HTMLDivElement>(null);
+  const [isValidStart, setIsValidStart] = useState(true);
+  const [isValidEnd, setIsValidEnd] = useState(true);
+
 
   const notify = () => toast.error('Both words must be the same length', {
                             position: "top-center",
@@ -45,6 +48,52 @@ export default function Home() {
                             transition: Bounce,
                             });
 
+  const not_valid = () => toast.error('Both words must be a valid english word', {
+                            position: "top-center",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                            transition: Flip,
+                            });
+  
+  const no_algorithm = () => toast.error('Please select an algorithm', {
+                            position: "top-center",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                            transition: Flip,
+                            });
+
+  const checkWord = async (e, string) => {
+    const word = e.target.value;
+    const response = await fetch('http://localhost:8080/validword', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(word),
+    });
+    
+    // Assuming response.json() returns a boolean indicating validity
+    const isValidWord = await response.json();
+
+    // Update the isValid state with the validity of the word
+
+    if (string === "start") {
+      setIsValidStart(isValidWord.valid);
+    } else {
+      setIsValidEnd(isValidWord.valid);
+    }
+  } 
+
   useEffect(() => {
     if (showResult) {
       resultSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -53,13 +102,23 @@ export default function Home() {
   , [showResult]);
 
   const handleSubmit = async () => {
+
     if (startWord === "" || endWord === "") {
       emptyfields();
       return;
     }
-
     if (startWord.length !== endWord.length) {
       notify();
+      return;
+    }
+
+    if (algorithm === "") {
+      no_algorithm();
+      return;
+    }
+
+    if (!isValidStart || !isValidEnd) {
+      not_valid();
       return;
     }
     
@@ -98,11 +157,13 @@ export default function Home() {
   const handleStartWord = (e) => {
     setStartWord(e.target.value);
     setShowResult(false);
+    checkWord(e, "start");
   };
   
   const handleEndWord = (e) => {
     setEndWord(e.target.value);
     setShowResult(false);
+    checkWord(e, "end");
   };
   
   return (
@@ -124,8 +185,8 @@ export default function Home() {
             <h1 className={`${jac.className} text-5xl `}>Word Ladder Solver!!  </h1>
           </div>
           <div className="p-5 bg-gradient-to-tr from-black/40 to-gray-500/20 gap-5 flex flex-col rounded-xl mt-8 ">
-            <TextInput label={"Start Word"} placeholder={"commence"} value={startWord} handleChange={handleStartWord} />
-            <TextInput label={"End Word"} placeholder={"conclude"} value={endWord} handleChange={handleEndWord} />
+            <TextInput label={"Start Word"} placeholder={"commence"} value={startWord} handleChange={handleStartWord} Validity={isValidStart} />
+            <TextInput label={"End Word"} placeholder={"conclude"} value={endWord} handleChange={handleEndWord} Validity={isValidEnd} />
           </div>
           <div className="flex flex-row items-center justify-center mt-5 gap-10">
             <div className="p-5 w-80 rounded-lg bg-gradient-to-bl from-red-100 to-cyan-200 flex ">
