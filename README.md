@@ -40,7 +40,7 @@ Untuk kepastian program berjalan sesuai dengan keinginan anda dapat melakukan se
 Program ini dapat dijalankan dengan dua cara, terminal dan website:
 ### Website
 - Dari root directory lakukan command berikut untuk menuju ke directory frontend 
-```cd src/frontend```
+``cd src/frontend``
 - Jalankan command berikut untuk installasi kebutuhan website:
 ```npm i```
 - Jalankan frontend dan backend dengan mengubah directory pada bin
