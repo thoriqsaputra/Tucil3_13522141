@@ -40,14 +40,22 @@ Untuk kepastian program berjalan sesuai dengan keinginan anda dapat melakukan se
 Program ini dapat dijalankan dengan dua cara, terminal dan website:
 ### Website
 - Dari root directory lakukan command berikut untuk menuju ke directory frontend 
-``cd src/frontend``
+```bash
+cd src/frontend
+```
 - Jalankan command berikut untuk installasi kebutuhan website:
-```npm i```
+```bash
+npm i
+```
 - Jalankan frontend dan backend dengan mengubah directory pada bin
-```cd ../../bin```
+```bash
+cd ../../bin
+```
 - Pastikan bahwa localhost:3000 dan localhost:8080 tidak digunakan oleh program lain
 - Lalu jalankan command .bat pada terminal anda
-```./run_febe.bat```
+```bash
+./run_febe.bat
+```
 - Tunggu sebentar frontend dan backend akan dijalankan
 - Buka browsert keinginan kalian lalu buka http://localhost:3000/
 - Website akan dijalankan
@@ -55,9 +63,13 @@ Program ini dapat dijalankan dengan dua cara, terminal dan website:
 
 ### Terminal
 - Dari root directory lakukan command berikut untuk menuju ke directory bin
-```cd bin```
+```bash
+cd bin
+```
 - Lalu buka terminal dan jalankan command berikut:
-```./run_main.bat```
+```bash
+./run_main.bat
+```
 - Terminal baru akan dibuat dan menjalankan main program
 - Pada terminal anda dapat memasukkan startWord, endWord serta algoritma yang kalian inginkan.
 
