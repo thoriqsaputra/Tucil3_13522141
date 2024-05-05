@@ -47,7 +47,7 @@ cd src/frontend
 ```bash
 npm i
 ```
-- Jalankan frontend dan backend dengan mengubah directory pada bin
+- Ubah directory ke bin untuk menjalankan frontend dan backend
 ```bash
 cd ../../bin
 ```
