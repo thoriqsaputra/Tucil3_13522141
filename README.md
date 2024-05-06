@@ -18,13 +18,10 @@
 - Spring Boot
 
 ## Feautures
-- Inputs untuk startWord dan endWord
-- Memastikan input benar
-- Pop up how to use
 - Algoritma UCS
 - Algoritma GBFS
 - Algoritma A*
-- Hasil pencarian
+- Penyelesaian wordl ladder problem
 
 ## Setup
 Untuk kepastian program berjalan sesuai dengan keinginan anda dapat melakukan setup sebagai berikut:
@@ -37,7 +34,7 @@ Untuk kepastian program berjalan sesuai dengan keinginan anda dapat melakukan se
 
 >Clone repo ini ke dalam folder yang diinginkan.
 
-Program ini dapat dijalankan dengan dua cara, terminal dan website:
+Program ini dapat dijalankan dengan dua cara; terminal dan website:
 ### Website
 - Dari root directory lakukan command berikut untuk menuju ke directory frontend 
 ```bash
