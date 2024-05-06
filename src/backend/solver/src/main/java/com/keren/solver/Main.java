@@ -54,7 +54,10 @@ public class Main {
                 System.out.println("Exiting...");
                 break;
             }
-            
+
+            startWord = startWord.toLowerCase();
+            endWord = endWord.toLowerCase();
+
             long starttime = System.nanoTime();
             switch (choice) {
                 case 1:

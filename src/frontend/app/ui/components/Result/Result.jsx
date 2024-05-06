@@ -16,7 +16,7 @@ export default function Result({Result}) {
         />
       </div> 
       <div className="flex flex-col gap-3 items-center justify-center pt-[200px] z-10 pb-10">
-        <h1 className={`${racing.className} text-4xl `}>Ladder has been found!</h1>
+        <h1 className={`${racing.className} text-4xl `}>{wordlist.length > 0 ? 'Ladder has been found!' : '):'}</h1>
         <h2 className={`text-2xl ${racing.className}`}>Took {Result.processingTimeMillis} {Result.metric} </h2>
         <h2 className={`text-2xl ${racing.className}`}>{Result.visitedWords} words visited</h2>
         {wordlist.length === 0 
