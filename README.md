@@ -21,7 +21,7 @@
 - Algoritma UCS
 - Algoritma GBFS
 - Algoritma A*
-- Penyelesaian wordl ladder problem
+- Penyelesaian word ladder problem
 
 ## Setup
 Untuk kepastian program berjalan sesuai dengan keinginan anda dapat melakukan setup sebagai berikut:
