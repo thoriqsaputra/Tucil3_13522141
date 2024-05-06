@@ -11,13 +11,13 @@
 * [Project Status](#project-status)
 * [Contact](#contact)
 
-## Technology Used
+## Technologies Used
 - Next.js 14
 - Apache Maven 3.9.6
 - Java
 - Spring Boot
 
-## Feautures
+## Features
 - Algoritma UCS
 - Algoritma GBFS
 - Algoritma A*
