@@ -1,5 +1,5 @@
 # Tucil 3 Strategi Algoritma
-# Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
+### Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
 
 > Tugas kecil ini adalah implementasi dari algoritma Uniform Cost Search (UCS), Greedy Best First Search (GBFS), dan A* untuk menyelesaikan permasalahan Word Ladder. Word Ladder adalah permainan teka-teki di mana pemain harus mengubah satu kata menjadi kata lainnya, dengan setiap langkah hanya mengubah satu huruf dan memastikan bahwa setiap kata yang dihasilkan adalah kata yang valid. Dalam tugas kecil ini, kami mengimplementasikan ketiga algoritma tersebut dalam bahasa pemrograman Java dan melakukan pengujian untuk membandingkan kinerja dan efektivitas masing-masing algoritma. Hasil pengujian menunjukkan bahwa A* memberikan solusi yang optimal dan efisien, sementara UCS memiliki waktu eksekusi paling lama, dan GBFS cenderung lebih cepat tetapi tidak menjamin solusi optimal dalam beberapa kasus.
 
