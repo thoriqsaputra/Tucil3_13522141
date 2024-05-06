@@ -33,7 +33,7 @@ Untuk kepastian program berjalan sesuai dengan keinginan anda dapat melakukan se
 ## Usage
 
 >Clone repo ini ke dalam folder yang diinginkan.
-
+Agar command `'.'` dapat dijalankan diharapkan untuk membuka folder dalam VsCode atau code editor semacam yang dapat menjalankan command `'.'`
 Program ini dapat dijalankan dengan dua cara; terminal dan website:
 ### Website
 - Dari root directory lakukan command berikut untuk menuju ke directory frontend 
