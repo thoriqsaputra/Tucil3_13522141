@@ -1,0 +1,13 @@
+Enter start word: junkies
+Enter end word: changed
+Algorithms:
+1. Uniform Cost Search
+2. A* Search
+3. Greedy Best First Search
+Enter 0 to exit
+Choose an algorithm: 1
+
+Time taken: 57.0486 ms
+Length of ladder: 14
+Visited words: 4572
+junkies -> punkies -> punties -> putties -> puttier -> pettier -> peatier -> platier -> platter -> clatter -> chatter -> chanter -> chanted -> changed

@@ -1,0 +1,13 @@
+Enter start word: Pork
+Enter end word: Lord
+Algorithms:
+1. Uniform Cost Search
+2. A* Search
+3. Greedy Best First Search
+Enter 0 to exit
+Choose an algorithm: 2
+
+Time taken: 2.2077 ms
+Length of ladder: 4
+Visited words: 269
+pork -> pore -> lore -> lord

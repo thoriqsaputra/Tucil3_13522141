@@ -1,0 +1,13 @@
+Enter start word: person
+Enter end word: ballon
+Algorithms:
+1. Uniform Cost Search
+2. A* Search
+3. Greedy Best First Search
+Enter 0 to exit
+Choose an algorithm: 1
+
+Time taken: 96.212401 ms
+Length of ladder: 14
+Visited words: 5482
+person -> parson -> parton -> carton -> canton -> cantor -> canter -> banter -> bander -> balder -> baller -> ballet -> ballot -> ballon

@@ -48,10 +48,26 @@ public class Main {
             System.out.println("3. Greedy Best First Search");
             System.out.println("Enter 0 to exit");
             System.out.print("Choose an algorithm: ");
-            int choice = scanner.nextInt();
-            
+
+            int choice;
+            while (true) {
+                String input = scanner.next();
+
+                try {
+                    choice = Integer.parseInt(input);
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input! Please enter a valid choice.");
+                    continue;
+                }
+
+                if (choice >= 0 && choice <= 3) {
+                    break;
+                } else {
+                    System.out.println("Invalid choice! Please enter a valid choice.");
+                }
+            }
+
             if (choice == 0) {
-                System.out.println("Exiting...");
                 break;
             }
 
@@ -61,18 +77,19 @@ public class Main {
             long starttime = System.nanoTime();
             switch (choice) {
                 case 1:
-                ladder = Solver.ucsSolver(startWord, endWord, validWords);
-                break;
+                    ladder = Solver.ucsSolver(startWord, endWord, validWords);
+                    break;
                 case 2:
-                ladder = Solver.aStarSolver(startWord, endWord, validWords);
-                break;
+                    ladder = Solver.aStarSolver(startWord, endWord, validWords);
+                    break;
                 case 3:
-                ladder = Solver.gbfsSolver(startWord, endWord, validWords);
-                break;
+                    ladder = Solver.gbfsSolver(startWord, endWord, validWords);
+                    break;              
                 default:
                 System.out.println("Invalid choice!");
                     break;
             }
+
             long endtime = System.nanoTime();
             double time = (double) (endtime - starttime) / 1_000_000;
             
@@ -97,7 +114,7 @@ public class Main {
             }
             System.out.println();
         }
-        scanner.close(); // Close the scanner after exiting the loop
+        scanner.close();
     }
     
     

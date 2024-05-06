@@ -1,0 +1,4 @@
+Time taken: 13.4204 ms
+Length of ladder: 14
+Visited words: 1885
+person -> parson -> parton -> carton -> canton -> cantor -> canter -> banter -> baiter -> bailer -> baller -> ballet -> ballot -> ballon

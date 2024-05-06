@@ -1,0 +1,10 @@
+Enter start word: junkies
+Enter end word: changed
+Algorithms:
+1. Uniform Cost Search
+2. A* Search
+3. Greedy Best First Search
+Enter 0 to exit
+Choose an algorithm: 3
+
+No ladder found!
