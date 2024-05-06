@@ -50,15 +50,16 @@ npm i
 ```bash
 cd ../../bin
 ```
-- Pastikan bahwa localhost:3000 dan localhost:8080 tidak digunakan oleh program lain
+- Pastikan bahwa http://localhost:3000 dan http://localhost:8080 tidak digunakan oleh program lain
 - Lalu jalankan command .bat pada terminal anda
 ```bash
 ./run_febe.bat
 ```
 - Tunggu sebentar frontend dan backend akan dijalankan
-- Buka browsert keinginan kalian lalu buka http://localhost:3000/
-- Website akan dijalankan
+- Buka browser kesukaan anda lalu buka http://localhost:3000/
+- Website word ladder solver akan muncul
 - Disini kalian dapat memasukkan startWord dan endWord serta algoritma yang kalian inginkan
+- Lalu dapat melihat hasil saat menekan tombol 'Start Solving'.
 
 ### Terminal
 - Dari root directory lakukan command berikut untuk menuju ke directory bin
@@ -71,6 +72,7 @@ cd bin
 ```
 - Terminal baru akan dibuat dan menjalankan main program
 - Pada terminal anda dapat memasukkan startWord, endWord serta algoritma yang kalian inginkan.
+- Lalu dapat melihat hasil setelah memasukkan semua input dengan benar.
 
 ## Project Status
 Project is: _complete_
